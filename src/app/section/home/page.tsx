@@ -6,9 +6,9 @@ import styles from "./styles.module.css";
 export default function Hero() {
   return (
     <div
-      className={`h-screen  ${styles.hero_container} flex flex-col items-center pt-10 gap-3`}
+      className={`h-screen  ${styles.hero_container} flex flex-col items-center pt-24 lg:pt-10 gap-3`}
     >
-      <div className=" h-fit">
+      <div className="h-fit">
         <MainLogo height={100} width={200} />
       </div>
       <p
