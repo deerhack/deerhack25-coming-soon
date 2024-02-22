@@ -1,9 +1,8 @@
-import Image from "next/image";
-
+import Hero from "./section/home/page";;
 export default function Home() {
   return (
-    <main className="">
-      Deerhack 2024 Coming Soon
-    </main>
+    <>
+      <Hero />
+    </>
   );
 }
