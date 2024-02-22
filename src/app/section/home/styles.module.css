@@ -1,0 +1,12 @@
+.hero_container {
+    background-image: url("../../assets/images/background_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+@media (max-width: 767px) {
+    .hero_container {
+        background-position: left;
+    }
+}

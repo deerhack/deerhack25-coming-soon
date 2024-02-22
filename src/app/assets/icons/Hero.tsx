@@ -1,7 +1,7 @@
-export default function Hero({
+export default function HeroIcon({
   width = 1536,
   height = 869,
-  className = "h-fit",
+  className,
 }: {
   width?: number;
   height?: number;
@@ -10,9 +10,7 @@ export default function Hero({
   return (
     <svg
       className={className}
-      width={width}
-      height={height}
-      viewBox="0 0 1536 869"
+      viewBox="0 200 1500 900"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

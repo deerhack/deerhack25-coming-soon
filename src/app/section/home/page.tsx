@@ -1,54 +1,21 @@
-"use client"
 import MainLogo from "@/app/assets/icons/MainLogo";
-import HeroIcon from "@/app/assets/icons/Hero";
-import HeroPhone from "@/app/assets/icons/Hero"
 import { cabinetBold } from "@/app/utils/fonts";
-import { useState, useEffect } from 'react';
+
+import styles from "./styles.module.css";
 
 export default function Hero() {
-    const [logoSize, setLogoSize] = useState({ width: 345, height: 152 });
-    const [textSize, setTextSize] = useState('text-3xl');
-  
-    useEffect(() => {
-      const handleResize = () => {
-        if (window.innerWidth < 580) {
-          setLogoSize({ width: 150, height: 50 });
-        }
-  
-        else if (window.innerWidth < 768) {
-          setLogoSize({ width: 200, height: 87 });
-          setTextSize('text-lg'); 
-        }
-  
-        else {
-          setLogoSize({ width: 345, height: 150 });
-          setTextSize('text-3xl'); 
-        }
-      };
-  
-      handleResize();
-      window.addEventListener('resize', handleResize);
-  
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
   return (
-    <div className=" flex flex-column justify-center object-contain bg-dark-purple ">
-        <div className=" w-screen h-screen overflow-hidden object-fill border border-black">
-            <HeroIcon className="sm:hidden md:hidden lg:block"/>
-            <HeroPhone className="lg:hidden md:block sm:block" />
-        </div>
-      
-      <div className="absolute gap-[25px] top-[80px] flex flex-col text-center ">
-        <MainLogo className="w-fit h-fit"/>
-        <p
-          className={`text-3xl font-extrabold text-secondary ${cabinetBold.className}`}
-        >
-          Coming Soon
-        </p>
+    <div
+      className={`h-screen  ${styles.hero_container} flex flex-col items-center pt-10 gap-3`}
+    >
+      <div className=" h-fit">
+        <MainLogo height={100} width={200} />
       </div>
+      <p
+        className={`text-3xl font-extrabold  text-primary-gradient-color-reverse h-fit ${cabinetBold.className}`}
+      >
+        Coming Soon
+      </p>
     </div>
   );
-};
-
+}
