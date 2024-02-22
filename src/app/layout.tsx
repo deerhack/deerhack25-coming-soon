@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Deerhack 2024 - Coming Soon",
+  description:"Deerhack 2024 Landing Page Coming Soon."
 };
 
 export default function RootLayout({
