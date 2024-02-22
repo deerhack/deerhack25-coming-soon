@@ -4,7 +4,7 @@ const nextConfig = {
     images:{
         unoptimized:true
     },
-    assetPrefix:'/deerhack24-coming-soon'
+    // assetPrefix:'/deerhack24-coming-soon'
 };
 
 export default nextConfig;
