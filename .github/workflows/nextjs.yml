@@ -4,8 +4,7 @@
 name: GitHub Pages deploy
 
 permissions:
-  contents: read
-  pages: write          #
+  contents: write        #
 
 on:
   push:
