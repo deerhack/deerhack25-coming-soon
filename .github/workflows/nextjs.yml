@@ -3,6 +3,10 @@
 
 name: GitHub Pages deploy
 
+permissions:
+  contents: read
+  pages: write          #
+
 on:
   push:
     branches: [main]
