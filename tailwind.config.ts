@@ -8,13 +8,31 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        primary: "#6633CC",
+        secondary: "#F5C144",
+        "dark-purple": "#110C24",
+        violet: "#241A4A",
+        grape: "#6633CC",
+        purpures: "#9D4BAD",
+        saffron: "#F5C144",
+        magnolia: "#FCF7FF",
       },
+      gradientColorStopPositions: {
+        3: "3%",
+        1: "1%",
+      },
+      fontFamily: {
+        "cabinet-light": ["var(--font-cabinet-light)"],
+      },
+    
+     
     },
   },
   plugins: [],
+  corePlugins: {
+    opacity: true,
+    transitionProperty: true,
+  },
 };
 export default config;
