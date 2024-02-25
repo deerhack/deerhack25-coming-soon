@@ -1,11 +1,17 @@
 .hero_container {
-    background-image: url("../../assets/images/background_image.jpg");
+    background-image: url("../../assets/images/background_image_scaled.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
+    .hero_container {
+        background-image: url("../../assets/images/background_image_phone.jpg");
+    }
+}
+
+@media (max-width: 1200px) {
     .hero_container {
         background-position: left;
     }
