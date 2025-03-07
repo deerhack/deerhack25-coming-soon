@@ -30,6 +30,8 @@ export default function Page() {
         method: "POST",
         body: JSON.stringify(submitData),
         headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
           "content-type": "application/json",
         },
       });
