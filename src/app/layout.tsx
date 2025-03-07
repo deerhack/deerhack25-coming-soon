@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Deerhack 2024 - Coming Soon",
-  description:"Deerhack 2024 Landing Page Coming Soon."
+  title: "Deerhack 2025 - Coming Soon",
+  description:"Deerhack 2025 Landing Page Coming Soon."
 };
 
 export default function RootLayout({

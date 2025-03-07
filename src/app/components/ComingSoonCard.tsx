@@ -12,7 +12,7 @@ export default function ComingSoonCard(): ReactElement {
   return (
     <div
       className={`${styles.muted_color} rounded-[0.65rem] 
-        w-[90vw] sm:w-[80vw] lg:w-[36vw] xl:w-[30vw] 
+        w-[90vw] sm:w-[80vw] lg:w-[36vw] xl:w-[36vw] 3xl:w-[36vw] 
         h-auto 
         flex flex-col justify-center items-center 
         border-secondary border-2 backdrop-blur-sm
@@ -38,12 +38,11 @@ export default function ComingSoonCard(): ReactElement {
         <span
           className={`${cabinetRegular.className} 
           text-center text-white
-          text-base sm:text-lg md:text-xl lg:text-2xl
-          px-2 sm:px-4`}
+          text-base sm:text-lg md:text-xl lg:text-2xl xl:px-14 px-2`}
         >
           Pre-Register Now to Get Notified When Registration Starts.
         </span>
-        <Link href={"https://forms.gle/uE3r4M7vFLHbZbFs8"} className="w-full flex justify-center">
+        <Link href={"https://forms.gle/uE3r4M7vFLHbZbFs8"} className="w-full flex h-fit justify-center">
           <button
             className={`${cabinetExtraBold.className}
           text-black rounded-sm bg-[#F5C144]
