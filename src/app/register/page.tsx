@@ -1,8 +1,6 @@
 "use client";
 
-import leaf_prizes_right from "@/app/assets/images/leaf_prizes_right.svg";
 import { cabinetExtraBold, cabinetRegular } from "../utils/fonts";
-import Image from "next/image";
 import styles from "./styles.module.css";
 import { useState, useEffect } from "react";
 
