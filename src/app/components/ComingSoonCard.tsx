@@ -42,7 +42,7 @@ export default function ComingSoonCard(): ReactElement {
         >
           Pre-Register Now to Get Notified When Registration Starts.
         </span>
-        <Link href={"https://forms.gle/uE3r4M7vFLHbZbFs8"} className="w-full flex h-fit justify-center">
+        <Link href={"/register"} className="w-full flex h-fit justify-center">
           <button
             className={`${cabinetExtraBold.className}
           text-black rounded-sm bg-[#F5C144]
