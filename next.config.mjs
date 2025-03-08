@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath:"/deerhack25-coming-soon",
+    basePath:"",
     output:'export',
     images:{
         unoptimized:true
